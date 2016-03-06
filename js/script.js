@@ -24,6 +24,7 @@ var successCallBack = function(positionObject) {
 } 
 var errorCallBack = function (error) {
 	console.log(error)
+	city.innerHTML = "<p>Current Location<p>"
 }
 
 

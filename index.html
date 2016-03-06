@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<link rel="stylesheet" type="text/css" href="http://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+ 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+		<div class="background">
+			<img class="backgroundImage" src="images/sunrise-phu-quoc-island-ocean.jpg">
+		</div>
+		<input class="findCity" type="text" placeholder="Search by city..."> 
+		<div class="location">
+			<img class="locationIcon" src="images/locationIcon.svg">
+			<h6 class="city"></h6>
+		</div>
+		<div class="currentTime"></div>
+		<div id="weatherContainer">
+			<button class="currentTempButton">Detail Forecast</button>
+			<button class="weeklyButton">Weekly Forecast</button>
+			<button class="hourlyButton">Hourly Forecast</button>
+			<div class="cityWeather">
+			</div>
+			<div class="forecastWeather">
+			</div>
+			<span id="logo">Made by Ari Quinones Design</span>
+		</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

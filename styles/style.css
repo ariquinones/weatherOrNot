@@ -1,0 +1,249 @@
+* {
+	margin: 0; 
+	box-sizing: border-box;
+	font-family: 'Poiret One', sans-serif;
+}
+.firstInput {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	color: transparent; 
+	border: 1px solid white;
+	border-radius: 50px;
+}
+.backgroundImage {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	/*-webkit-filter: blur(3px);*/
+}
+.findCity {
+	width: 45%;
+	height: 100px;
+	background: transparent;
+	border-radius: 50px;
+	padding-left: 1%;
+	border: none; 
+	position: absolute;
+	top: 2%;
+	left: 1%;
+	font-size: 3em;
+	color: white;
+}
+.findCity:focus {
+	outline: none;
+}
+.location {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	text-align: center;
+}
+.locationIcon {
+	width: 5em;
+}
+h6 {
+	font-size: 2.5em;
+	color: white;
+	margin-top: -15%;
+}
+.currentTime {
+	font-size: 1.5em;
+	color: white;
+	position: absolute;
+	right: 5%;
+	top: 25%;
+	display: inline-block;
+}
+
+#weatherContainer {
+	width: 100%; 
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	background: rgba(88,176,236,.3);
+}
+#logo {
+	position: absolute;
+	bottom: 0;
+	right: 2px;
+	color: rgba(255,255,255,.5);
+	font-size: .5em;
+}
+button {
+	position: absolute;
+	bottom: 100%;
+	padding: .5% 1%;
+	color: white;
+	border-radius: 30px;
+	background: transparent;
+	border: 1px solid white;
+}
+.currentTempButton {
+	left: 1%;
+}
+.weeklyButton {
+	left: 10%;
+}
+.hourlyButton {
+	left: 20%;
+}
+button:focus {
+	outline: 0;
+	background: rgba(88,176,236,.3);
+}
+.cityWeather {
+	width: 25%;
+	color: white;
+	display: inline-block;
+	vertical-align: top;
+	padding: 1%;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+.currentTemperature {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 5%;
+}
+.currentTemperature h1 {
+	font-size: 5em;
+	display: inline;
+	vertical-align: middle;
+	margin-right: 3%;
+ }
+ .mainIcon {
+	width: 6em;
+	vertical-align: bottom;
+}
+.daySummary {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	margin-bottom: 10%;
+}
+.weekday {
+	font-size: 1em;
+    border: 1px solid white;
+	border-radius: 30px;
+	padding: 1% 8%;
+	margin-right: 8%;
+}
+.daySummary p {
+	font-size: 1em;
+	display: inline;
+}
+.currentForecast {
+	width: 90%;
+	text-align: left;
+	display: inline-block;
+	padding-top: 2%;
+	-webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.currentForecast p {
+	margin: .4em .1em;
+	font-size: 1em;
+}
+
+.forecastWeather {
+	width: 73%;
+	color: white;
+	display: inline-block;
+	text-align: right;
+}
+.dayTemp {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	border-left: 1px solid gray;
+	padding: 3%;
+	width: 16%;
+}
+.dayTemp h3 {
+	font-size: 1em;
+	border-radius: 30px;
+	padding: 5%;
+	background-color: rgba(0,0,0,.3);
+}
+.dayTemp p {
+	font-size: 1em;
+}
+.dayTemp span {
+	font-size: .25em;
+}
+.icon {
+	width: 3em;
+	margin: 25% auto;
+}
+/*Hourly Div*/
+.hourlyTemp {
+	display: inline-block;
+	width: 16%;
+	color: white;
+	text-align: center;
+	padding: 2%;
+	border-left: 1px solid gray;
+}
+.hourlyTemp p {
+	font-size: .8em;
+}
+.nextHourButton {
+	width: 2%;
+	opacity: .7;
+	vertical-align: top;
+	padding-top: 10%;
+}
+.previousHourButton {
+	width: 2%;
+	opacity: .7;
+	vertical-align: top;
+	padding-top: 10%;
+}
+@media only screen and (max-width: 1110px) {
+	.currentTemperature h1 {
+	font-size: 3em;
+	display: inline;
+	vertical-align: middle;
+	margin-right: 2%;
+ }
+ .mainIcon {
+	width: 4em;
+	vertical-align: bottom;
+	}
+}
+@media only screen and (max-width: 980px) {
+	button {
+		font-size: .5em;
+	}
+}
+@media only screen and (max-width: 750px) {
+	.cityWeather {
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+	.forecastWeather {
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+	
+	.weeklyButton {
+		left: 13%;
+	}
+	.hourlyButton {
+		left: 26%;
+	}
+	.hourlyTemp {
+		border: none;
+	}
+	.dayTemp {
+		border: none;
+	}
+
+}

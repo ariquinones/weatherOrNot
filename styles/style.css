@@ -245,5 +245,107 @@ button:focus {
 	.dayTemp {
 		border: none;
 	}
+}
+/* Ipad */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	.findCity {
+		padding-left: 5%;
+		font-size: 4em;
+	}
+	.currentTime {
+		font-size: 2.5em;
+		top: 15%;
+	}
+	#weatherContainer {
+		bottom: 0;
+	}
+	.buttonDiv {
+		left: 0;
+	}
+	button {
+		background: rgba(30,85,218, .3);
+		font-size: 2.5em;
+	}
+	.currentTemperature {
+		font-size: 2em;
+	}
+	.daySummary {
+		font-size: 2em;
+	}
+	.forecastWeather {
+		text-align: center;
+		height: 45vh;
+	}
+	.hourlyTemp {
+		width: 30%;
+		font-size: 1.5em;
+	}
+	.icon {
+		margin: 15% auto;
+	}
+	.dayTemp {
+		width: 30%;
+		font-size: 1.5em;
+	    margin-top: -5%;
+	}
+	.currentForecast {
+		width: 80%;
+		text-align: center; 
+		font-size: 2em;
+		-webkit-column-count: 2;
+	}
+	.currentForecast p {
+		margin: 0;
+		margin-bottom: 30%;
+	}
+}
 
+@media screen and (max-device-width: 480px) {
+	.findCity {
+		padding-left: 5%;
+		font-size: 4em;
+	}
+	.currentTime {
+		font-size: 2.5em;
+		top: 15%;
+	}
+	#weatherContainer {
+		bottom: 0;
+	}
+	.buttonDiv {
+		left: 0;
+	}
+	button {
+		background: rgba(30,85,218, .3);
+		font-size: 2.5em;
+	}
+	.currentTemperature {
+		font-size: 2em;
+	}
+	.daySummary {
+		font-size: 2em;
+	}
+	.forecastWeather {
+		text-align: center;
+		margin-bottom: 3%;
+		height: 45vh;
+	}
+	.hourlyTemp {
+		width: 30%;
+		font-size: 2em;
+	}
+	.dayTemp {
+		width: 30%;
+		font-size: 2em;
+	}
+	.currentForecast {
+		width: 80%;
+		text-align: center; 
+		font-size: 2.5em;
+		-webkit-column-count: 2;
+	}
+	.currentForecast p {
+		margin: 0;
+		margin-bottom: 30%;
+	}
 }
